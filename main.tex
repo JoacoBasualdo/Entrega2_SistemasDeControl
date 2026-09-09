@@ -1,0 +1,320 @@
+\documentclass[10pt]{article}
+\textheight = 21cm
+\textwidth = 15cm
+\topmargin = -0.5cm
+\oddsidemargin = 1cm
+
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{epstopdf}
+\usepackage{titling}
+\usepackage{fancyvrb,fancybox,calc} 
+\usepackage[svgnames]{xcolor} 
+\usepackage{enumerate}
+\usepackage{adjustbox}
+\usepackage{tabu}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{subcaption}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\parindent=0mm
+
+\definecolor{light-gray}{gray}{0.94}
+\definecolor{textgray}{gray}{0.5}
+\newenvironment{verbcode}{\VerbatimEnvironment
+  \begin{Sbox} \color{textgray}\scriptsize
+  \begin{minipage}{\linewidth+2\fboxsep-2\fboxrule-12pt}    
+  \begin{Verbatim}
+}{\end{Verbatim}  
+  \end{minipage}   
+  \end{Sbox} \color{black}\normalsize
+  \fcolorbox{black}{light-gray}{\TheSbox} 
+} 
+
+\begin{document}
+\begin{center}
+
+\textsc{\LARGE Sistemas de Control}\\[0.2cm]
+\textsc{\Large Instituto Tecnológico de Buenos Aires}\\[0.2cm]
+
+% Title
+\HRule \\[0.2cm]
+{ \huge \bfseries Entrega guía número 2 \\[0.2cm] }
+\HRule \\[1cm]
+
+\begin{multicols}{2}
+
+
+% Integrantes
+\columnbreak
+{\raggedright
+\large
+\emph{Alumnos/as:} \ Bautista \textsc{Estrada} \\
+\hspace*{2.5cm} Facundo \textsc{Garaguso Fernandez}\\
+\hspace*{2.5cm} Joaquín \textsc{Basualdo}\\
+}
+\end{multicols}
+
+\vspace{0.5cm}
+
+\begin{adjustbox}{max width=\textwidth}
+\renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{|l|c|}
+    \hline
+    \ \ \ Nota Final    &              \\ \hline \hline
+    \ \ \ Firma y Fecha &              \\ \hline
+  \end{tabular}
+\end{adjustbox}
+
+\end{center}
+
+\vspace{0.2cm}
+
+\pagestyle{fancy}
+\headheight=60pt
+\fancyhead[L]{Sistemas de Control - ITBA - 2026}        
+\fancyhead[R]{Guia 2}
+
+\newpage
+
+\section*{Ejercicio 2}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/Ej2.png}
+\end{figure}
+
+\begin{itemize}
+    \item La planta por si sola presenta un comportamiento sobreamortiguado, el cual no tiene sobrepicos. Para que tenga sobrepicos, el sistema debe ser subamortiguado. Para ello, es necesario modificar la posición de los polos para que sean complejos conjugados. Eso es posible hacerlo cerrando el lazo.
+\end{itemize}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/Ej2i.png}
+\end{figure}
+
+
+\vspace{0.4cm}
+
+% -------------------------------------------------------------------------
+% INCISO A
+% -------------------------------------------------------------------------
+\noindent{\Large\textbf{\textcircled{\normalsize a}}}\hspace{0.2cm} \textbf{\textcolor{RoyalBlue}{Lazo cerrado}}
+
+\[
+T(s) = \frac{G(s)}{1 + G(s)} = \frac{\frac{K}{s^2 + \frac{8}{3}s + \frac{4}{3}}}{1 + \frac{K}{s^2 + \frac{8}{3}s + \frac{4}{3}}} = \frac{\frac{K}{s^2 + \frac{8}{3}s + \frac{4}{3}}}{\frac{s^2 + \frac{8}{3}s + (\frac{4}{3} + K)}{s^2 + \frac{8}{3}s + \frac{4}{3}}} = \frac{K}{s^2 + \frac{8}{3}s + (\frac{4}{3} + K)}
+\]
+
+\begin{itemize}
+    \item Saco el valor de $\xi$, que será menor a 1.
+\end{itemize}
+
+\[
+0{,}2 = e^{\frac{-\pi \cdot \xi}{\sqrt{1 - \xi^2}}}
+\]
+
+\[
+\left( \ln(0{,}2) \cdot \sqrt{1 - \xi^2} \right)^2 = (-\pi \cdot \xi)^2
+\]
+
+\[
+2{,}59 - 2{,}59\,\xi^2 = \pi^2 \cdot \xi^2
+\]
+
+\[
+\frac{2{,}59}{\pi^2 + 2{,}59} = \xi^2 = 0{,}456
+\]
+
+\[
+\xi = \sqrt{0{,}452} = 0{,}456
+\]
+
+\begin{itemize}
+    \item Calculo el valor de $\omega_n$
+\end{itemize}
+
+\[
+\frac{8}{3} = 2 \cdot \xi \cdot \omega_n = 2 \cdot 0{,}456 \cdot \omega_n
+\]
+
+\[
+\omega_n = \frac{8/3}{2 \cdot 0{,}456} = 2{,}924
+\]
+
+\begin{itemize}
+    \item Saco la ganancia $K$
+\end{itemize}
+
+\[
+\omega_n = 2{,}924 = \sqrt{K + \frac{4}{3}}
+\]
+
+\[
+K = 2{,}924^2 - \frac{4}{3}
+\]
+
+\[
+\fbox{$K = 7{,}22$}
+\]
+
+\begin{itemize}
+    \item Saco el tiempo de establecimiento ($t_s$)
+\end{itemize}
+
+\[
+t_s \approx \frac{4}{\xi \cdot \omega_n} = \frac{4}{0{,}456 \cdot 2{,}924} = \frac{4}{1{,}333}
+\]
+
+\[
+\fbox{$t_s \approx 3\text{ s}$} 
+\]
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/Ej2a.png}
+\end{figure}
+
+En la imagen se observa como el sistema se empieza a comportar como un sistema subamortiguado a partir de cerrar el lazo.
+
+\vspace{0.4cm}
+
+% -------------------------------------------------------------------------
+% INCISO B
+% -------------------------------------------------------------------------
+\noindent{\Large\textbf{\textcircled{\normalsize b}}}
+
+\begin{itemize}
+    \item Saco la $T(s)$
+\end{itemize}
+
+\[
+T(s) = \frac{G(s)}{1 + G(s)} = \frac{\frac{Ks + K}{s^2 + \frac{8}{3}s + \frac{4}{3}}}{\frac{s^2 + (\frac{8}{3} + K)s + (\frac{4}{3} + K)}{s^2 + \frac{8}{3}s + \frac{4}{3}}} = \frac{Ks + K}{s^2 + \left(\frac{8}{3} + K\right)s + \left(\frac{4}{3} + K\right)}
+\]
+\textit{Cambió el término de s y el numerador.}
+
+\begin{itemize}
+    \item El $\xi$ es el mismo
+\end{itemize}
+
+\[
+\xi = 0{,}456
+\]
+
+\begin{itemize}
+    \item Saco $\omega_n$
+\end{itemize}
+
+\[
+\frac{8}{3} + K = 2 \cdot 0{,}456 \cdot \omega_n
+\]
+
+\[
+\omega_n = 2{,}924 + \frac{K}{2 \cdot 0{,}456}
+\]
+
+\begin{itemize}
+    \item Saco $K$
+\end{itemize}
+
+\[
+2{,}924 + 1{,}096\,K = \sqrt{\frac{4}{3} + K}
+\]
+
+\[
+8{,}55 + 6{,}41\,K + 1{,}2\,K^2 = \frac{4}{3} + K
+\]
+
+\[
+7{,}22 + 5{,}41\,K + 1{,}2\,K^2 = 0 \longrightarrow \fbox{$K_{1,2} = (-2{,}254 \pm 0{,}967\,j)$} \longrightarrow \text{Esto no es físicamente posible.}
+\]
+
+\begin{itemize}
+    \item La principal diferencia radica en que no es un sistema de orden 2 puro para analizar su función de transferencia.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/Ej2b2.png}
+\end{figure}
+
+
+\vspace{0.4cm}
+
+% -------------------------------------------------------------------------
+% INCISO C
+% -------------------------------------------------------------------------
+\noindent{\Large\textbf{\textcircled{\normalsize c}}}
+
+A medida que el cero se aleja del eje imaginario, más se parece la respuesta a un sistema de orden 2 puro. Esto se debe a que los polos empiezan a tener mayor peso en la forma de la respuesta en frecuencia.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/Ej2c.png}
+\end{figure}
+
+\section*{Ejercicio 3: Bomba de Insulina}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/Ej3.png}
+\end{figure}
+
+\begin{itemize}
+    \item Función de transferencia motor de corriente continua:
+\end{itemize}
+
+\[
+G(s) = \frac{K_m}{J \cdot L_a \cdot s^2 + s \cdot (J \cdot R_a + B \cdot L_a) + (B \cdot R_a + K_b \cdot K_m)}
+\]
+
+\[
+G(s) = \frac{0{,}045}{1{,}5 \cdot 10^{-4} \, s^2 + 0{,}04502 \, s + 8{,}565 \cdot 10^{-3}}
+\]
+
+\begin{itemize}
+    \item $Q(s) = K_p \cdot G(s)$
+\end{itemize}
+
+\begin{align*}
+Q(s) &= \frac{0{,}45}{1{,}5 \cdot 10^{-4} \, s^2 + 0{,}04502 \, s + 8{,}565 \cdot 10^{-3}} = \frac{1}{1{,}5 \cdot 10^{-4}} \cdot \left( \frac{0{,}45}{s^2 + \frac{0{,}04502}{1{,}5 \cdot 10^{-4}} \, s + \frac{8{,}565 \cdot 10^{-3}}{1{,}5 \cdot 10^{-4}}} \right) \\
+     &= \frac{3000}{s^2 + 300{,}133 \, s + 57{,}10}
+\end{align*}
+
+\begin{itemize}
+    \item Saco los polos con baskara:
+\end{itemize}
+
+\[
+P_1 = -0{,}19
+\]
+
+\[
+P_2 = -299{,}94
+\]
+
+\begin{itemize}
+    \item El Polo 1 es el dominante dado que se encuentra mucho más cercano al eje imaginario. Por ello, la función de transferencia estará guiada por $P_1$.
+\end{itemize}
+
+\begin{itemize}
+    \item \textbf{Simplificación:} Como el Polo 1 es muy dominante sobre el Polo 2, se puede simplificar el sistema sacando el Polo 2 sin observar cambios en la respuesta temporal.
+\end{itemize}
+
+\[
+\text{Entonces queda que } G(s) = \frac{3000}{(s + 0{,}19)(s + 299{,}94)} = \frac{3000}{(s + 0{,}19) \cdot 299{,}94 \left(\frac{s}{299{,}94} + 1\right)} = \frac{10{,}002}{s + 0{,}19}
+\]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/Ej3a.png}
+\end{figure}
+
+
+\end{document}
