@@ -259,6 +259,10 @@ A medida que el cero se aleja del eje imaginario, más se parece la respuesta a 
     \includegraphics[width=\textwidth]{imagenes/Ej2c.png}
 \end{figure}
 
+%-----------------------------------------------------------------
+% Ejercicio 3
+% ----------------------------------------------------------------
+
 \section*{Ejercicio 3: Bomba de Insulina}
 
 \begin{figure}[H]
@@ -315,6 +319,87 @@ P_2 = -299{,}94
     \centering
     \includegraphics[width=\textwidth]{imagenes/Ej3a.png}
 \end{figure}
+
+% ------------------------------------------------------------
+% EJERCICIO 5
+% ------------------------------------------------------------
+
+\section*{Ejercicio 5}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/Ej5.png}
+\end{figure}
+
+\begin{itemize}
+    \item Planteo el sistema
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    % Espacio para el diagrama en bloques dibujado
+    \includegraphics[width=0.75\textwidth]{imagenes/diagrama_ej5.png}
+\end{figure}
+
+\begin{itemize}
+    \item Analizo el error al escalón
+\end{itemize}
+
+\[
+\lim_{s \to 0} \frac{s \cdot \frac{1}{s}}{1 + K \cdot \frac{2}{s^2 + 6s + 8}} = \lim_{s \to 0} \frac{1}{\frac{s^2 + 6s + (8 + 2K)}{s^2 + 6s + 8}} = \lim_{s \to 0} \frac{s^2 + 6s + 8}{s^2 + 6s + (8 + 2K)} = \frac{8}{8 + 2K} = \frac{4}{4 + K}
+\]
+
+\begin{itemize}
+    \item El error no se puede anular directamente. Se lo puede hacer tender a cero si se pone en el controlador un integrador, que provoca que la ganancia vaya a infinito sin romper el sistema.
+\end{itemize}
+
+\vspace{0.3cm}
+\noindent\textbf{\textcolor{red}{Simulación:}}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{imagenes/simulacion_ej5.png}
+    \caption{Simulación con $K = 2$, $10$, $20$ y con un integrador, para verificar el error en estado estacionario.}
+    \label{fig:simulacion_ej5}
+\end{figure}
+
+
+% -----------------------------------------
+% EJERCICIO 6
+% -----------------------------------------
+\section*{Ejercicio 5}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/Ej6.png}
+\end{figure}
+
+En el ejercicio anterior nos anticipamos a este. Como bien se habia dicho en el ejercicio 5, se puede obtener ganancia infinita en el estado estacionario poniendo un integrador en serie. A continuación se adjunta un gráfico donde se observa la diferencia de poner o no integrador
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/diferencia_ej6.png}
+\end{figure}
+
+
+Luego se muestra como varía la respuesta del sistema si se modifican las ganancias del integrador.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/ganancias_ej6.png}
+\end{figure}
+
+A medida que se aumenta la ganancia, va disminuyendo la parte real de los polos por lo que cada vez se acercan más al semieje imaginario. Esto lo que genera es un aumento de la inestabiliad, lo cual se observa en el aumento de las oscilaciones a medida que se aumenta la ganancia.
+
+
+Finalmente se realiza una simulación donde se agrega una retroalimentación que tiene el formato de un integrador con ganancia 10. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/retroalimentación_ej6.png}
+\end{figure}
+
+En la imagen se observa que la salida tiende a 0 a incluir el integrador en la retroalimentación. Esto se debe a que el término "S" se encuentra en el numerador por lo que provoca esa respuesta a la salida 
+
 
 
 \end{document}

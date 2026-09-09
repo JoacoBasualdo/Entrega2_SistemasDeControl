@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1788977179.79683 "c:/Users/Joaquin Basualdo/Desktop/ITBA/4to 1er cuatri/Sistemas de Control/Guia 2/Entrega/main.tex" "main.pdf" "main" 1788977182.91224 0
+["pdflatex"] 1788983633.81076 "c:/Users/Joaquin Basualdo/Desktop/ITBA/4to 1er cuatri/Sistemas de Control/Guia 2/Entrega/main.tex" "main.pdf" "main" 1788983637.82897 0
   "Imagenes/Ej2.png" 1788973710 109158 87e9c6edcbdc99235569d96bbf3f77f4 ""
   "Imagenes/Ej2a.png" 1788974136 40370 3a93b7a6082c0ceeb87c846139ed40d2 ""
   "Imagenes/Ej2b2.png" 1788976750 55730 f18216b922a9455b09be7bc42b776648 ""
@@ -7,7 +7,13 @@
   "Imagenes/Ej2i.png" 1788975779 36254 5ceadb372be0b839262fd91b56bfe291 ""
   "Imagenes/Ej3.png" 1788976964 139673 69fa104ae70d8db06aeea35184f9d606 ""
   "Imagenes/Ej3a.png" 1788977143 50288 7c65c6e2285bc84866cdb35efc3cef87 ""
-  "c:/Users/Joaquin Basualdo/Desktop/ITBA/4to 1er cuatri/Sistemas de Control/Guia 2/Entrega/main.tex" 1788977178 8227 bff0a1c3dd015f2f0091c58b38af83e9 ""
+  "Imagenes/Ej5.png" 1788981676 36365 2cb56c5e1a56a42d01b723c0747fbf92 ""
+  "Imagenes/Ej6.png" 1788982896 81383 ac2b308e8b263306eef34b8aaba6974e ""
+  "Imagenes/diagrama_ej5.png" 1788981704 10160 762d3804cf5caeecc3cffd615e7618d3 ""
+  "Imagenes/diferencia_ej6.png" 1788983094 65848 de70e924920703d5627d2aa6ef026d3e ""
+  "Imagenes/ganancias_ej6.png" 1788983279 116496 115ae768f8abb77a7778d10516384082 ""
+  "Imagenes/simulacion_ej5.png" 1788981357 95352 0cfa7060dcb6ccf56a1170b0a108cecc ""
+  "c:/Users/Joaquin Basualdo/Desktop/ITBA/4to 1er cuatri/Sistemas de Control/Guia 2/Entrega/main.tex" 1788983628 11431 f8ba717ab7849cf63243f62156de987e ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1788871574 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1788873381 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/jknappen/ec/tcbx1440.tfm" 1788872694 1536 31d7b1d6f1ef88de2aa925487cab16c7 ""
@@ -99,8 +105,9 @@
   "c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1788885070 5655996 795b756740562267ad2ae16e70168a76 ""
   "c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1788885587 3658220 3d373139180f305945baa7a0f7a03da4 ""
   "c:/texlive/2026/texmf.cnf" 1788884989 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1788977182 269 bdc2b00757d6fc5e8a65a2a2a71d771e "pdflatex"
-  "main.tex" 1788977178 8227 bff0a1c3dd015f2f0091c58b38af83e9 ""
+  "imagenes/retroalimentación_ej6.png" 1788983473 59691 a1a5da46b65bbbc242b8b3ff42e1f10b ""
+  "main.aux" 1788983637 593 fb91eaeff316853c9d0b5acac0b6a276 "pdflatex"
+  "main.tex" 1788983628 11431 f8ba717ab7849cf63243f62156de987e ""
   (generated)
   "main.aux"
   "main.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.8)  9 SEP 2026 15:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.8)  9 SEP 2026 16:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -502,15 +502,52 @@ Package pdftex.def Info: imagenes/Ej2c.png  used on input line 259.
 <imagenes/Ej3.png, id=41, 619.56468pt x 449.42906pt>
 File: imagenes/Ej3.png Graphic file (type png)
 <use imagenes/Ej3.png>
-Package pdftex.def Info: imagenes/Ej3.png  used on input line 266.
+Package pdftex.def Info: imagenes/Ej3.png  used on input line 270.
 (pdftex.def)             Requested size: 426.79134pt x 309.59204pt.
  [5 <./Imagenes/Ej2b2.png> <./Imagenes/Ej2c.png>] [6 <./Imagenes/Ej3.png>]
 <imagenes/Ej3a.png, id=51, 650.43pt x 361.35pt>
 File: imagenes/Ej3a.png Graphic file (type png)
 <use imagenes/Ej3a.png>
-Package pdftex.def Info: imagenes/Ej3a.png  used on input line 316.
+Package pdftex.def Info: imagenes/Ej3a.png  used on input line 320.
 (pdftex.def)             Requested size: 426.79134pt x 237.1133pt.
- [7 <./Imagenes/Ej3a.png>] (./main.aux
+<imagenes/Ej5.png, id=52, 442.65375pt x 111.41624pt>
+File: imagenes/Ej5.png Graphic file (type png)
+<use imagenes/Ej5.png>
+Package pdftex.def Info: imagenes/Ej5.png  used on input line 331.
+(pdftex.def)             Requested size: 426.79134pt x 107.42929pt.
+ [7 <./Imagenes/Ej3a.png> <./Imagenes/Ej5.png>]
+<imagenes/diagrama_ej5.png, id=59, 319.94531pt x 79.04532pt>
+File: imagenes/diagrama_ej5.png Graphic file (type png)
+<use imagenes/diagrama_ej5.png>
+Package pdftex.def Info: imagenes/diagrama_ej5.png  used on input line 341.
+(pdftex.def)             Requested size: 320.09349pt x 79.08249pt.
+<imagenes/simulacion_ej5.png, id=60, 926.5014pt x 361.35pt>
+File: imagenes/simulacion_ej5.png Graphic file (type png)
+<use imagenes/simulacion_ej5.png>
+Package pdftex.def Info: imagenes/simulacion_ej5.png  used on input line 361.
+(pdftex.def)             Requested size: 362.77524pt x 141.48833pt.
+<imagenes/Ej6.png, id=61, 757.32938pt x 214.55156pt>
+File: imagenes/Ej6.png Graphic file (type png)
+<use imagenes/Ej6.png>
+Package pdftex.def Info: imagenes/Ej6.png  used on input line 374.
+(pdftex.def)             Requested size: 426.79134pt x 120.91084pt.
+ [8 <./Imagenes/diagrama_ej5.png> <./Imagenes/simulacion_ej5.png> <./Imagenes/Ej6.png>]
+<imagenes/diferencia_ej6.png, id=68, 925.056pt x 442.2924pt>
+File: imagenes/diferencia_ej6.png Graphic file (type png)
+<use imagenes/diferencia_ej6.png>
+Package pdftex.def Info: imagenes/diferencia_ej6.png  used on input line 381.
+(pdftex.def)             Requested size: 426.79134pt x 204.06436pt.
+<imagenes/ganancias_ej6.png, id=69, 926.5014pt x 325.215pt>
+File: imagenes/ganancias_ej6.png Graphic file (type png)
+<use imagenes/ganancias_ej6.png>
+Package pdftex.def Info: imagenes/ganancias_ej6.png  used on input line 389.
+(pdftex.def)             Requested size: 426.79134pt x 149.81409pt.
+<imagenes/retroalimentación_ej6.png, id=70, 926.5014pt x 325.215pt>
+File: imagenes/retroalimentación_ej6.png Graphic file (type png)
+<use imagenes/retroalimentación_ej6.png>
+Package pdftex.def Info: imagenes/retroalimentación_ej6.png  used on input line 398.
+(pdftex.def)             Requested size: 426.79134pt x 149.81409pt.
+ [9 <./Imagenes/diferencia_ej6.png> <./Imagenes/ganancias_ej6.png>] [10 <./imagenes/retroalimentación_ej6.png>] (./main.aux
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
 )
@@ -520,18 +557,18 @@ L3 programming layer <2026-08-10>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 9637 strings out of 467099
- 164689 string characters out of 5412503
+ 9697 strings out of 467099
+ 166398 string characters out of 5412503
  612210 words of memory out of 5000000
- 38847 multiletter control sequences out of 15000+600000
+ 38907 multiletter control sequences out of 15000+600000
  632230 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,11n,131p,426b,387s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,11n,131p,426b,390s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb>
-Output written on main.pdf (7 pages, 615723 bytes).
+Output written on main.pdf (10 pages, 1004035 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 152 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
