@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1789833252.40693 "d:/Usuarios/Escritorio/Carpetas/Archivos e Imagenes/Facultad/ITBA 2026/2Q/Sistemas de Control/Entrega2_SistemasDeControl/main.tex" "main.pdf" "main" 1789833255.06059 0
+["pdflatex"] 1789850257.48868 "d:/Usuarios/Escritorio/Carpetas/Archivos e Imagenes/Facultad/ITBA 2026/2Q/Sistemas de Control/Entrega2_SistemasDeControl/main.tex" "main.pdf" "main" 1789850259.99641 0
   "Imagenes/Ej11.PNG" 1789829365 94064 7c061947dc1ddd58e389ab987667a134 ""
   "Imagenes/Ej11_ChienHronesReswick.PNG" 1789829611 145260 5658e74c041bfb89a2e6f4febaf8b8dc ""
   "Imagenes/Ej11_Valores.PNG" 1789833144 109087 f24cc4f1b90bebfbdf03cdde2012aa04 ""
@@ -111,10 +111,10 @@
   "c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1788902891 5655996 795b756740562267ad2ae16e70168a76 ""
   "c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1788902988 3658215 40d107640da31ad15f5dd6216f7d90b2 ""
   "c:/texlive/2026/texmf.cnf" 1788902848 713 e69b156964470283e0530f5060668171 ""
-  "d:/Usuarios/Escritorio/Carpetas/Archivos e Imagenes/Facultad/ITBA 2026/2Q/Sistemas de Control/Entrega2_SistemasDeControl/main.tex" 1789833251 16275 29c0a4f9939555a52e7040757ae5dcf7 ""
+  "d:/Usuarios/Escritorio/Carpetas/Archivos e Imagenes/Facultad/ITBA 2026/2Q/Sistemas de Control/Entrega2_SistemasDeControl/main.tex" 1789850256 16273 7c3d58a5a41bea46d7ae2fe3f224052d ""
   "imagenes/retroalimentación_ej6.png" 1789828998 59691 a1a5da46b65bbbc242b8b3ff42e1f10b ""
-  "main.aux" 1789833254 2098 afdce786299b61209f94fc7243b99056 "pdflatex"
-  "main.tex" 1789833251 16275 29c0a4f9939555a52e7040757ae5dcf7 ""
+  "main.aux" 1789850259 2098 afdce786299b61209f94fc7243b99056 "pdflatex"
+  "main.tex" 1789850256 16273 7c3d58a5a41bea46d7ae2fe3f224052d ""
   (generated)
   "main.aux"
   "main.log"
