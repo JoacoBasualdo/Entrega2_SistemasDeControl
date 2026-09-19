@@ -1,8 +1,8 @@
-PWD c:/Users/facun/OneDrive/Documentos/GitHub/Entrega2_SistemasDeControl
+PWD d:/Usuarios/Escritorio/Carpetas/Archivos e Imagenes/Facultad/ITBA 2026/2Q/Sistemas de Control/Entrega2_SistemasDeControl
 INPUT c:/texlive/2026/texmf.cnf
 INPUT c:/texlive/2026/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/facun/OneDrive/Documentos/GitHub/Entrega2_SistemasDeControl/main.tex
+INPUT d:/Usuarios/Escritorio/Carpetas/Archivos e Imagenes/Facultad/ITBA 2026/2Q/Sistemas de Control/Entrega2_SistemasDeControl/main.tex
 OUTPUT main.log
 INPUT c:/texlive/2026/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2026/texmf-dist/tex/latex/base/article.cls
@@ -234,6 +234,31 @@ INPUT ./Imagenes/Ziegler-Nichols.png
 INPUT ./Imagenes/Ziegler-Nichols.png
 INPUT ./Imagenes/Ziegler-Nichols.png
 INPUT ./Imagenes/Ziegler-Nichols.png
+INPUT ./Imagenes/Ej11.PNG
+INPUT ./Imagenes/Ej11.PNG
+INPUT ./Imagenes/Ej11.PNG
+INPUT ./Imagenes/Ej11.PNG
+INPUT ./Imagenes/Ej11.PNG
+INPUT ./Imagenes/Ej11_escalon.PNG
+INPUT ./Imagenes/Ej11_escalon.PNG
+INPUT ./Imagenes/Ej11_escalon.PNG
+INPUT ./Imagenes/Ej11_escalon.PNG
+INPUT ./Imagenes/Ej11_escalon.PNG
+INPUT ./Imagenes/Ej11_respuesta.PNG
+INPUT ./Imagenes/Ej11_respuesta.PNG
+INPUT ./Imagenes/Ej11_respuesta.PNG
+INPUT ./Imagenes/Ej11_respuesta.PNG
+INPUT ./Imagenes/Ej11_respuesta.PNG
+INPUT ./Imagenes/Ej11_ChienHronesReswick.PNG
+INPUT ./Imagenes/Ej11_ChienHronesReswick.PNG
+INPUT ./Imagenes/Ej11_ChienHronesReswick.PNG
+INPUT ./Imagenes/Ej11_ChienHronesReswick.PNG
+INPUT ./Imagenes/Ej11_ChienHronesReswick.PNG
+INPUT ./Imagenes/Ej11_Valores.PNG
+INPUT ./Imagenes/Ej11_Valores.PNG
+INPUT ./Imagenes/Ej11_Valores.PNG
+INPUT ./Imagenes/Ej11_Valores.PNG
+INPUT ./Imagenes/Ej11_Valores.PNG
 INPUT main.aux
 INPUT c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb

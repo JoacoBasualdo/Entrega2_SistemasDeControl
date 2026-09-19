@@ -525,4 +525,97 @@ G_c(s)
 
 donde los tiempos se encuentran expresados en minutos.
 
+\section{Ejercicio 11}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Imagenes/Ej11.png}
+    \caption{Consigna del ejercicio 11.}
+    \label{fig:ej11}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Imagenes/Ej11_escalon.png}
+    \caption{Porcentaje de apertura de la válvula de vapor en el circuito primario.}
+    \label{fig:ej11_escalon}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Imagenes/Ej11_respuesta.PNG}
+    \caption{Cambio de temperatura en el compartimento secundario.}
+    \label{fig:ej11_respuesta}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Imagenes/Ej11_ChienHronesReswick.PNG}
+    \caption{Tablas de Chien-Hrones-Reswick.}
+    \label{fig:chienhronesreswick}
+\end{figure}
+
+
+En primer lugar, se determinan las variaciones en la señal de entrada (figura \ref{fig:ej11_escalon}) y salida (figura \ref{fig:ej11_respuesta}). 
+Para el coeficiente K de ganancia estática:
+
+
+\[
+\Delta u = 70\%-27\% = 44\%
+\]
+
+para la entrada y
+\[
+\Delta y = 62^\circ\text{C} - 42^\circ\text{C} = 20^\circ\text{C}
+\]
+
+para la salida.
+
+
+Luego:
+\[
+K = \frac{\Delta y}{\Delta u}
+  = \frac{20}{43}
+  \approx 0,4651.
+\]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Imagenes/Ej11_Valores.PNG}
+    \caption{Líneas trazadas para obtener parámetros para el PID.}
+    \label{fig:ej11_valores}
+\end{figure}
+
+Trazando líneas sobre la figura \ref{fig:ej11_respuesta} y considerando que la entrada se aplica en el segundo 50, se obtuvieron los siguientes valores, visibles en la figura \ref{fig:ej11_valores}:
+
+\[
+T = 175s - 65s = 110s
+\]
+\[
+L = 65s-50s = 15s
+\]
+
+Estos, posteriormente, se utilizaron para llegar al valor de a, siendo
+\[
+a = \frac{KL}{T} = \frac{0,4651\cdot15s}{135s} \approx 0,06342
+\]
+
+Se opta por la opción con 0\% sobreimpulso, pues en un proceso industrial excederse de la temperatura objetivo puede tener efectos perjudiciales sobre el producto final. Se prioriza
+llegar a una temperatura correcta por sobre la rapidez del proceso. Además, no hay mención de la necesidad de acelerar el proceso por lo que no hay requerimientos temporales que conviertan al sobreimpulso de 20\% en una opción más atractiva.
+Utilizando el diseño con 0\% sobreimpulso, se obtienen $K_p$, $T_i$ y $T_d$ del ajuste de Chien-Hrones-Reswich, cuya tabla se puede observar en la figura \ref{fig:chienhronesreswick}:
+\[
+K_p = \frac{0,6}{a} = \frac{0,6}{0,06342} \approx 9,46
+\]
+\[
+T_i = T = 110s
+\]
+\[
+T_d = 0,5 \cdot L = 0,5 \cdot 15s = 7,5s
+\]
+
+Finalmente, se llega a la ecuación:
+
+\[
+G_{PID}(s) = K_p \cdot (1+\frac{1}{T_is}+T_ds) = 9,46\cdot(1+\frac{1}{110\cdot s}+7,5\cdot s)
+\]
 \end{document}
