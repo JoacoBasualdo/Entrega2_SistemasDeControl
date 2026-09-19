@@ -604,18 +604,26 @@ Se opta por la opción con 0\% sobreimpulso, pues en un proceso industrial exced
 llegar a una temperatura correcta por sobre la rapidez del proceso. Además, no hay mención de la necesidad de acelerar el proceso por lo que no hay requerimientos temporales que conviertan al sobreimpulso de 20\% en una opción más atractiva.
 Utilizando el diseño con 0\% sobreimpulso, se obtienen $K_p$, $T_i$ y $T_d$ del ajuste de Chien-Hrones-Reswich, cuya tabla se puede observar en la figura \ref{fig:chienhronesreswick}:
 \[
+\boxed{
 K_p = \frac{0,6}{a} = \frac{0,6}{0,06342} \approx 9,46
+}
 \]
 \[
+\boxed{
 T_i = T = 110s
+}
 \]
 \[
+\boxed{
 T_d = 0,5 \cdot L = 0,5 \cdot 15s = 7,5s
+}
 \]
 
 Finalmente, se llega a la ecuación:
 
 \[
+\boxed{
 G_{PID}(s) = K_p \cdot (1+\frac{1}{T_is}+T_ds) = 9,46\cdot(1+\frac{1}{110\cdot s}+7,5\cdot s)
+}
 \]
 \end{document}
