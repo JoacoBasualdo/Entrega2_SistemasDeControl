@@ -367,7 +367,7 @@ P_2 = -299{,}94
 % -----------------------------------------
 % EJERCICIO 6
 % -----------------------------------------
-\section*{Ejercicio 5}
+\section*{Ejercicio 6}
 
 \begin{figure}[H]
     \centering
@@ -400,6 +400,129 @@ Finalmente se realiza una simulación donde se agrega una retroalimentación que
 
 En la imagen se observa que la salida tiende a 0 a incluir el integrador en la retroalimentación. Esto se debe a que el término "S" se encuentra en el numerador por lo que provoca esa respuesta a la salida 
 
+\section*{Ejercicio 9}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{Imagenes/Ej9.png}
+    \caption{Consigna y curva de reacción del Ejercicio 9.}
+    \label{fig:ej9}
+\end{figure}
+
+La respuesta del proceso corresponde a una curva de reacción sigmoidea,
+por lo que se emplea el método de Ziegler--Nichols a lazo abierto.
+
+El cambio aplicado en la variable de control es
+
+\[
+\Delta u = 9\%
+\]
+
+y el cambio observado en la salida es
+
+\[
+\Delta y = 3.9\%.
+\]
+
+Por lo tanto, la ganancia estática del proceso es
+
+\[
+R = \frac{\Delta y}{\Delta u}
+  = \frac{3.9}{9}
+  = 0.4333.
+\]
+
+De la curva de reacción se obtiene el tiempo de retardo
+
+\[
+L = 2.4\ \text{min}.
+\]
+
+La tangente alcanza el valor final de la respuesta en
+\(t=7.6\ \text{min}\). Por lo tanto,
+
+\[
+L+T=7.6\ \text{min},
+\]
+
+de donde
+
+\[
+T=7.6-2.4=5.2\ \text{min}.
+\]
+
+Para determinar los parámetros del controlador PID se utiliza la tabla de
+sintonización de Ziegler--Nichols:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Imagenes/Ziegler-Nichols.png}
+    \caption{Tabla de sintonización de Ziegler--Nichols.}
+    \label{fig:ziegler-nichols}
+\end{figure}
+
+Para un controlador PID, las reglas de sintonización son
+
+\[
+K_p = 1.2\frac{T}{LR},
+\qquad
+T_i = 2L,
+\qquad
+T_d = 0.5L.
+\]
+
+Sustituyendo los valores obtenidos:
+
+\[
+K_p
+=1.2\frac{5.2}{(2.4)(0.4333)}
+\approx 6.00
+\]
+
+\[
+T_i=2(2.4)=4.8\ \text{min}
+\]
+
+\[
+T_d=0.5(2.4)=1.2\ \text{min}
+\]
+
+Por lo tanto, los parámetros del controlador PID son
+
+\[
+\boxed{
+K_p = 6.00
+\qquad
+T_i = 4.8\ \text{min}
+\qquad
+T_d = 1.2\ \text{min}
+}
+\]
+
+Utilizando la forma ideal del controlador PID,
+
+\[
+G_c(s)
+=
+K_p
+\left(
+1+\frac{1}{T_i s}+T_d s
+\right),
+\]
+
+se obtiene finalmente
+
+\[
+\boxed{
+G_c(s)
+=
+6
+\left(
+1+\frac{1}{4.8\,s}+1.2\,s
+\right)
+}
+\]
+
+donde los tiempos se encuentran expresados en minutos.
 
 \end{document}

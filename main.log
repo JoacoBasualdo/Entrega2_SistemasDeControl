@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.8)  9 SEP 2026 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.8)  19 SEP 2026 10:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Joaquin Basualdo/Desktop/ITBA/4to 1er cuatri/Sistemas de Control/Guia 2/Entrega/main.tex"
-(c:/Users/Joaquin Basualdo/Desktop/ITBA/4to 1er cuatri/Sistemas de Control/Guia 2/Entrega/main.tex
+**c:/Users/facun/OneDrive/Documentos/GitHub/Entrega2_SistemasDeControl/main.tex
+(c:/Users/facun/OneDrive/Documentos/GitHub/Entrega2_SistemasDeControl/main.tex
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-08-10>
 (c:/texlive/2026/texmf-dist/tex/latex/base/article.cls
@@ -547,7 +547,19 @@ File: imagenes/retroalimentación_ej6.png Graphic file (type png)
 <use imagenes/retroalimentación_ej6.png>
 Package pdftex.def Info: imagenes/retroalimentación_ej6.png  used on input line 398.
 (pdftex.def)             Requested size: 426.79134pt x 149.81409pt.
- [9 <./Imagenes/diferencia_ej6.png> <./Imagenes/ganancias_ej6.png>] [10 <./imagenes/retroalimentación_ej6.png>] (./main.aux
+ [9 <./Imagenes/diferencia_ej6.png> <./Imagenes/ganancias_ej6.png>]
+<Imagenes/Ej9.png, id=76, 477.28313pt x 100.87688pt>
+File: Imagenes/Ej9.png Graphic file (type png)
+<use Imagenes/Ej9.png>
+Package pdftex.def Info: Imagenes/Ej9.png  used on input line 407.
+(pdftex.def)             Requested size: 384.10959pt x 81.18338pt.
+ [10 <./imagenes/retroalimentación_ej6.png> <./Imagenes/Ej9.png>]
+<Imagenes/Ziegler-Nichols.png, id=82, 500.36937pt x 209.28188pt>
+File: Imagenes/Ziegler-Nichols.png Graphic file (type png)
+<use Imagenes/Ziegler-Nichols.png>
+Package pdftex.def Info: Imagenes/Ziegler-Nichols.png  used on input line 459.
+(pdftex.def)             Requested size: 277.41176pt x 116.03145pt.
+ [11 <./Imagenes/Ziegler-Nichols.png>] (./main.aux
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
 )
@@ -557,18 +569,18 @@ L3 programming layer <2026-08-10>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 9697 strings out of 467099
- 166398 string characters out of 5412503
+ 9717 strings out of 467099
+ 166822 string characters out of 5412503
  612210 words of memory out of 5000000
- 38907 multiletter control sequences out of 15000+600000
+ 38927 multiletter control sequences out of 15000+600000
  632230 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,11n,131p,426b,390s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,12n,131p,404b,390s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb>
-Output written on main.pdf (10 pages, 1004035 bytes).
+Output written on main.pdf (11 pages, 1138932 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
+ 159 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
